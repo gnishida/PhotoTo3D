@@ -1,3 +1,14 @@
-build/
-debug/
+build*/
+debug*/
+training/
 src/models/
+
+*.swp
+
+src/estimated_facade.png
+src/facade.png
+src/facade_wall.png
+src/facade0.png
+src/facade1.png
+src/temp.png
+src/temp2.png
