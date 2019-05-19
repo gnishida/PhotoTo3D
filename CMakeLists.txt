@@ -32,8 +32,9 @@ add_definitions(-DGLM_FORCE_CTOR_INIT)
 
 # Get sources
 file(GLOB SOURCES src/*.cpp)
+file(GLOB QRC src/*.qrc)
 
-add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES} ${QRC})
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Gui)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
